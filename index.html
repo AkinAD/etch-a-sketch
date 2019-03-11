@@ -2,15 +2,39 @@
 <html>
 <head>
 	<title>Etch a Sketch!</title>
-	<link rel="stylesheet" href="rpsStyles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-	<button type="button" onclick="issaRock()">BOO </button>
-	<button type="button" onclick="issaPaper()">Paper</button>
-	<button type="button" onclick="issaKnife()">Scissors</button>
-	
-	<script src="rpsScript.js"></script>
-	
+<body onload="drawGrid(20)">
+  <p id="odin">This project was done as part of <a href = "https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project">The Odin Project's</a> curriculum; </p>
+    <div id="hoverContainer" >
+        <div id="topItems">
+        <button type="button" onclick="clearGrid()"  class="button">CLEAR</button>
+        <button type="button" id="btnDrawGrid" class="button">DRAW!</button>
+        <input type="text" maxlength="3" id="gridSizeField" class=" gridInp" value="Enter Grid Size"/>
+          <!--    <span id="gridEG">Grid Size, EG: 50 (50 x 50 grid)</span> -->
+        <form name="drawingStyle" id="pleaseMove">
+             <input type="radio" name="myRadios" id="rdioHover" value="hover" class="form-radio drawStyle" checked><label>Hover</label>
+            <input type="radio" name="myRadios" id="rdioClickNdrag" value="clickNdrag" class="form-radio drawStyle"><label c>Click and Drag</label>
+           <!-- <input type="radio" name="myRadios" id="rdioEtch" value="etchAsketch" class="form-radio drawStyle"><label>Etch-a-Sketch</label> -->
+        </form>
+    </div>
+   	<div id="container" oncontextmenu="return false;"></div>
+    <div id="bottomItems">
+        <form class="colorPick" name="pickAcolor"> 
+            <input type="radio" name="myRadios" value="Black" id="rdioBlack" class="form-radio drawColor" checked><label for="rdioBlack" class="drawColor lbl" >Black</label>
+            <input type="radio" name="myRadios" value="Rainbow" id="rdioRainbow" class="form-radio drawColor"><label for="rdioRainbow"  class="drawColor lbl">Rainbow</label>
+            <input type="radio" name="myRadios" value="enterAcolor" id="rdioInput" class="form-radio drawColor"><label for="rdioInput"  class="drawColor lbl">Enter a color!: </label>            
+        </form>
+        
+        <label for="inp" class="inp">
+            <input type="Text" maxlength="7" class="colorValue" value="#000000" id="inp" placeholder="&nbsp;">
+            <span class="border"></span>
+        </label>   
+        <a href="https://htmlcolors.com/google-color-picker" target="_blank" id="colorPick" >Color Picker</a>
+    </div>    
+	<script src="script.js"></script>
+    <img src="images/Ice_bear.png" alt="Ice Bear, We Bare Bears" id="pic">
+        <a href="https:/github.com/AkinAd" target="_blank"><img src="images/Akin_Vector.png" alt="Akins Logo" id="myLogo" ></a>
+    </div>
 </body>
 </html>

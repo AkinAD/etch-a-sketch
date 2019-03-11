@@ -1,3 +1,253 @@
-body {
-//stuff
+body
+{
+    background-color: #f25757;
+    background-position: 400px;
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    
 }
+#odin
+{
+    
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0px 6px 8px #cc3030;
+    width :42%;
+    color :white;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    
+}
+#hoverContainer
+{
+    width: 1300px;
+    height: 720px;
+    position: relative;
+    top: 50px;
+    left: 250px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 12px 15px #cc3030;
+}
+#topItems
+{
+    position: relative;
+    top: 55px;
+    left: 19cm;
+    outline: 0px ;
+    width: 500px;;
+}
+#bottomItems
+{
+    position: relative;
+    top: 500px;
+    left: 19cm;
+    outline: 0px;
+    width: 600px;
+}
+
+#container
+{
+    width: 650px;
+    height: 650px;
+    top: 35px;
+    left: 45px;
+    position: absolute;
+    outline: 2px solid #a5a5a5;  
+    /*border-radius: 10px;
+    border-color: #a5a5a5;
+    border-width: 1.5px;
+    border-style: solid;*/
+
+}
+#pic 
+{
+    position: relative;
+    left: 750px;
+    bottom: 70px;
+    width: 45%;
+}
+#gridSizeField
+{
+    position: relative;
+    left : 2px;
+}
+.drawStyle
+{
+    top: 8px;
+}
+.drawColor
+{
+    top:8px;
+}
+.grid
+{
+    margin:0;
+	padding:0;
+	border:none;
+    outline: 2px solid #C0C0C0;
+    display: inline-block;
+    background-color: #eaebf2;
+    user-select: none;
+    cursor: pointer;
+}
+
+#myLogo
+{
+    width:130px;
+    height: 30px;
+    position: relative;
+    top: 110px;
+    left: 520px;    
+}
+
+#drawMethod
+{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+     
+}
+
+.button
+{
+    border-radius: 50px;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    background-color: #f25757;
+    font: 400 13.3333px Arial;    
+}
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 30px;
+     cursor: pointer;     
+     margin-right: 7px;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+} 
+
+.button:hover
+{
+    opacity: 0.8;
+}
+.pickAcolor 
+{
+    top:10cm;
+}
+
+.colorValue
+{
+    position: relative;
+    bottom: 5px;
+    left: 120px;
+}
+#colorPick
+{
+    color: #9098A9;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+}
+
+.inp
+{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 100px;
+  left: 236px;
+  top: -56.2px;
+}
+.inpu 
+{
+    position: absolute;
+   /* left: 236px;
+    top: -56.2px; */
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #9098A9;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+    width: 120px;
+}
+.border 
+{
+    position: absolute;
+  /*  left: 236px;
+    top: -56.2px; */
+    height: 2px;
+    width: 100%;
+    background: #0077FF /*#B87E55*/;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    /*transition: all .15s ease; */
+}
+input {
+    -webkit-appearance: none;
+    appearance: none;
+
+    border: 0;
+    /* font-family: inherit;
+    padding: 12px 0; */
+    height: 48px;
+   /* font-size: 16px;
+    font-weight: 500; */
+    border-bottom: 2px solid #C8CCD4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+   /* transition: all .15s ease; */
+   }
+input:hover
+{
+     /* background: rgba(#B87E5,.03); */
+}    
+.colorValue::not(:placeholder-shown),span
+{
+        color: #5A667F;
+       /* transform: translateY(-26px) scale(.75) */           
+}
+      
+.colorValue:focus, span, border, #gridSizeField:focus
+{
+      background: none;
+      outline: none;
+      color: #0077FF;
+      border-bottom: 2px solid #0077FF;
+      transform: translateY(-26px);
+      transform: scale(.75);
+      transform: scaleX(1);
+}
+
